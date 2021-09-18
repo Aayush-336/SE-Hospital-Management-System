@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="AddPatient">
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+            <children>
+                <HBox layoutX="14.0" layoutY="14.0" spacing="20.0">
+                    <children>
+                        <Text layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Patient Name"/>
+                        <TextField fx:id="nameField" layoutX="65.0" layoutY="192.0"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="14.0" layoutY="55.0" spacing="20.0">
+                    <children>
+                        <Text layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email"/>
+                        <TextField fx:id="emailField" layoutX="65.0" layoutY="192.0"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No"/>
+                        <TextField fx:id="contactField" layoutX="65.0" layoutY="192.0"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender"/>
+                        <ComboBox fx:id="genderComboBox" prefWidth="150.0"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age"/>
+                        <TextField fx:id="ageField" layoutX="65.0" layoutY="192.0"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Group"/>
+                        <TextField fx:id="bloodGroupField" layoutX="65.0" layoutY="192.0"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Button layoutX="719.0" layoutY="505.0" mnemonicParsing="false" onAction="#onSubmitClicked" text="Submit"/>
+        <Text fx:id="updateText" fill="RED" layoutX="14.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

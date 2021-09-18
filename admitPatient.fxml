@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="ancPane" prefHeight="550.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/8" fx:controller="AdmitPatient">
+    <children>
+        <VBox layoutX="14.0" layoutY="21.0" spacing="20.0">
+            <children>
+                <HBox layoutX="14.0" layoutY="21.0" spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Id"
+                              styleClass="imageDesc"/>
+                        <TextField fx:id="patientIdField" layoutX="307.0" layoutY="285.0"/>
+                        <Button mnemonicParsing="false" onAction="#onPatientSearchClicked" text="Search"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="14.0" layoutY="64.0" spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Patient Name" styleClass="imageDesc"/>
+                        <TextField fx:id="nameField" disable="true" layoutX="307.0" layoutY="285.0"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disease"
+                              styleClass="imageDesc"/>
+                        <TextField fx:id="diseaseField" layoutX="307.0" layoutY="285.0"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admit Date"
+                              styleClass="imageDesc"/>
+                        <DatePicker fx:id="admitDatePicker" promptText="Select Date"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Id"
+                              styleClass="imageDesc"/>
+                        <TextField fx:id="docIdField" layoutX="307.0" layoutY="285.0"/>
+                        <Button mnemonicParsing="false" onAction="#onDocSearchClicked" text="Search"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Doctor Name" styleClass="imageDesc"/>
+                        <TextField fx:id="docNameField" disable="true" layoutX="307.0" layoutY="285.0"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Button layoutX="725.0" layoutY="505.0" mnemonicParsing="false" onAction="#onSubmitButton" text="Admit"/>
+        <Text fx:id="updateText" fill="RED" layoutX="25.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

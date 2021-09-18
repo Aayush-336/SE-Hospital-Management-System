@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxWidth="-Infinity" prefHeight="550.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/8" fx:controller="AddService">
+    <children>
+        <VBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+            <children>
+                <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Service Name"/>
+                        <TextField fx:id="serviceField" layoutX="307.0" layoutY="285.0"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="24.0" layoutY="31.0" spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Id"/>
+                        <TextField fx:id="patientIdField" layoutX="307.0" layoutY="285.0"/>
+                        <Button mnemonicParsing="false" onAction="#onPatientSearchClicked" text="Search"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="24.0" layoutY="74.0" spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Patient Name"/>
+                        <TextField fx:id="nameField" disable="true" layoutX="307.0" layoutY="285.0"/>
+                    </children>
+                </HBox>
+                <HBox spacing="20.0">
+                    <children>
+                        <Text layoutX="225.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Bill Amount"/>
+                        <TextField fx:id="billField" layoutX="307.0" layoutY="285.0"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Text fx:id="updateText" fill="RED" layoutX="35.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Text>
+        <Button layoutX="725.0" layoutY="505.0" mnemonicParsing="false" onAction="#onSubmitButton" text="Add Service"/>
+    </children>
+</AnchorPane>
